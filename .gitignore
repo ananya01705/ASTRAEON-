@@ -13,7 +13,7 @@ venv/
 .streamlit/secrets.toml
 
 # Local data
- data/cache/*
+data/cache/*
 !data/cache/.gitkeep
 *.fits
 *.fit
