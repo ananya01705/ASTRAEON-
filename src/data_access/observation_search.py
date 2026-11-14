@@ -28,13 +28,12 @@ def search_spherex_observations(
 
     for collection in collections:
         try:
-            result = query_sia2(
+            frame = query_sia2(
                 ra_deg=ra_deg,
                 dec_deg=dec_deg,
                 radius_deg=radius_deg,
                 collection=collection,
             )
-            frame = result.to_table().to_pandas()
             frame["queried_collection"] = collection
             frames.append(frame)
         except IRSAQueryError as exc:
