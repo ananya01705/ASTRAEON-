@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Local data
+ data/cache/*
+!data/cache/.gitkeep
+*.fits
+*.fit
+*.fts
+*.fits.gz
+
+# Credentials
+.env
+.env.*
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
